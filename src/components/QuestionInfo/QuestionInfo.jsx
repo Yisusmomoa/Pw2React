@@ -44,15 +44,9 @@ class QuestionInfo extends Component{
                             <div className= {styles.InfoNoticia}>
                                 <p>#Utiles</p>
                                 <p>#NoUtiles</p>
-                                <p>#Respuestas</p>
-                                <p>Categorias: </p>                     
+                                <p>#Respuestas</p>                    
                             </div>
-                
-                            <div className={styles.imgPregunta}>
-                                <img src="Media/pug.jpg" alt=""/>
-                                <img src="Media/MOnkey.jpg" alt=""/>
-                            </div>
-    
+                   
                             <div className={styles.InfoUsuarioPreg}>
                                 <div className={styles.time}>
                                 <p>posted 1 min ago</p>

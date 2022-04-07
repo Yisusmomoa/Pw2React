@@ -38,31 +38,11 @@ class HacerPregunta extends Component{
                 <p>Include all the information someone would need to answer your question</p>
                 <div className={styles.textcontainer}>
 
-                  <div className={styles.qbodtopc}>
-                      <input id = "default-btn" type="file" hidden></input>
-                      <button className= {styles.Bicon} id="custom-btn1">
-                      <i className="far fa-image"></i>
-                      </button>
-                  </div>
-
                   <div className={styles.inputgroup}>
                     <textarea className = "qtextarea form-control" 
                     name="" id=""  placeholder="">{this.props.CuerpoPregunta}</textarea>
                   </div>
                   
-                  
-                  <div className={styles.botttontext}>
-
-                    <div className={styles.wrapper}>
-                      <div className={styles.image}>
-                          <img id = "img1" src="" alt=""></img>
-                      </div>
-                      <div id="cancel-btn"><i className="fas fa-times"></i></div>   
-                      <div className={styles.filename1}>File name here</div>   
-                    </div>
-
-
-                  </div>
 
                 </div>
             </div>
@@ -83,11 +63,12 @@ class HacerPregunta extends Component{
                 </Dropdown.Item>
                 </Dropdown.Menu>
              </Dropdown>
+             <br/><br/>
+            <Button variant="secondary" onClick={this.handleClick}>
+                Review your question
+            </Button>
       </div>
-      <br/><br/>
-      <Button variant="secondary" onClick={this.handleClick}>
-          Review your question
-      </Button>
+     
     </div>
   );
   }

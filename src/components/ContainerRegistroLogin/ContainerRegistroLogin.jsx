@@ -1,9 +1,22 @@
-import React from "react";
+import React,{ Component }  from 'react';
 import Styles from '../ContainerRegistroLogin/ContainerRegistroLogin.module.css'
 import {} from 'bootstrap'
 
-export function ContainerRegistroLogin() {
-     //this.div.appendChild(script);  
+
+class ContainerRegistroLogin extends Component{
+    constructor(props){
+        super(props);
+        this.handleClick=this.handleClick.bind(this);
+    
+      }
+      handleClick(){
+        alert('Pregunta relizada con exito');
+      }
+      componentDidMount(){
+        
+      }
+      render(){
+        //this.div.appendChild(script);  
     return (
         <div className= {Styles.container}>
            <div className = {Styles.cajaBack}>
@@ -47,4 +60,9 @@ export function ContainerRegistroLogin() {
            </div>
            
     );
+      }
 }
+
+
+export default ContainerRegistroLogin;
+

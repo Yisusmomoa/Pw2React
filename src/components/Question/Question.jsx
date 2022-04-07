@@ -6,11 +6,25 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
 import styles from './Question.module.css';
 import  QuestionInfo  from '../QuestionInfo/QuestionInfo';
-import { Answer } from '../Answer/Answer';
-import { AnswerForm } from '../AnswerForm/AnswerForm';
+import  Answer  from '../Answer/Answer';
+import AnswerForm from '../AnswerForm/AnswerForm';
 
 
 class Question extends Component{
+
+    constructor(props){
+        super(props);
+        this.state={
+            counter:5
+        }
+        setInterval(() => {
+            this.setState({
+                counter:this.state.counter+1   
+            })
+        }, 1000);
+    }
+    
+
     render(){
     return (
         <div className={styles.container}>
@@ -28,7 +42,7 @@ class Question extends Component{
                         </div>
                         <h3>
                             Numero respuestas: 
-                            {this.props.NumeroRespuestas}</h3>
+                            {this.state.counter}</h3>
                         <div id="AreaRespuestas">
                             <div class="Respuestas">
                                 <Answer></Answer>

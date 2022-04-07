@@ -6,7 +6,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
 import styles from './Profile.module.css'
 
-import { NavUser } from '../NavUser/NavUser';
+import  NavUser  from '../NavUser/NavUser';
 import  ProfileBody  from '../ProfileBody/ProfileBody';
 class Profile extends Component{
     render(){

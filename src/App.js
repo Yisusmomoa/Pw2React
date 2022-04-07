@@ -1,8 +1,8 @@
 import './App.css';
-import {NavBarMain} from './components/NavBarMain/NavBarMain'
-import { BottomNav } from "./components/BottomNav/BottomNav";
-import {Footer} from './components/Footer/Footer';
-import {ContainerRegistroLogin} from './components/ContainerRegistroLogin/ContainerRegistroLogin';
+import NavBarMain from './components/NavBarMain/NavBarMain'
+import  BottomNav  from "./components/BottomNav/BottomNav";
+import Footer from './components/Footer/Footer';
+import ContainerRegistroLogin from './components/ContainerRegistroLogin/ContainerRegistroLogin';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import { LandingPage } from './components/Pages/LandingPage';
 import  HacerPregunta from './components/HacerPregunta/HacerPregunta';
-import { PaginaPrincipal } from './components/PaginaPrincipal/PaginaPrincipal';
+import  PaginaPrincipal  from './components/PaginaPrincipal/PaginaPrincipal';
 import  Profile from './components/Profile/Profile';
 import Question from './components/Question/Question'
 function App() {

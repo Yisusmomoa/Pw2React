@@ -8,6 +8,7 @@ import styled from "styled-components";
 export const NavUserStyled=styled.li `
     padding: 10px;
     width: 100%;
+    justify-content:center;
     cursor: pointer;
     text-align: center;
     transition: all .2s ease-in-out;
